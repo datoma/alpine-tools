@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Michael Hoffmann
+MAINTAINER Michael Hoffmann (https://github.com/datoma)
 
 ENTRYPOINT ["/entrypoint.sh"]
 
