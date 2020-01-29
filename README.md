@@ -29,3 +29,4 @@ the entrypoint.sh is inspired by Fedora project https://raw.githubusercontent.co
     sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config
 - use certs
 - add telnet
+- add "dockerloop"
