@@ -31,4 +31,4 @@ __create_hostkeys
 __create_user
 __create_root_pw
 
-exec "$@"
+exec /usr/sbin/sshd -D -e "$@"
