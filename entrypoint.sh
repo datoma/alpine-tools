@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 : ${SSH_USERNAME:=user}
 : ${SSH_USERPASS:=$(dd if=/dev/urandom bs=1 count=15 | base64)}
@@ -22,7 +22,7 @@ __create_root_pw() {
 }
 
 __create_hostkeys() {
-	ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' 
+	ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
 }
 
 # Call all functions
