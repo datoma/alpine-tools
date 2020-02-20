@@ -12,7 +12,7 @@ Alpine image with some basic network and other tools. Currently the tools are
 
 
 ## Run
-    docker run -d -p 2200:22 datoma/alpine-tools
+    docker run --name alpine-tools -d -p 2200:22 datoma/alpine-tools
 get the passwords for "root" and user "user"
 
     docker logs <container_id>
@@ -28,5 +28,3 @@ the entrypoint.sh is inspired by Fedora project https://raw.githubusercontent.co
 
     sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config
 - use certs
-- add telnet
-- add "dockerloop"
