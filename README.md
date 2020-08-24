@@ -8,8 +8,10 @@ Alpine image with some basic network and other tools. Currently the tools are
 - curl
 - openssh
 - nmap
+- nmap-ncat
 - tcpdump
-
+- bind-tools
+- jq
 
 ## Run
     docker run --name alpine-tools -d -p 2200:22 datoma/alpine-tools
